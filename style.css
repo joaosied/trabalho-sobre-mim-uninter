@@ -62,7 +62,6 @@ nav a {
 .sectionText {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -125,18 +124,12 @@ nav a {
 }
 
 .textAboutMe {
+  font-weight: 500;
   width: 60%;
 }
 
 .iconsGrid {
   width: 80%;
-}
-
-.textAboutMe {
-  font-weight: 500;
-}
-
-.iconsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
@@ -158,6 +151,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  overflow-x: hidden;
 }
 
 .cardProject {
@@ -461,7 +455,6 @@ textarea:focus {
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
-
 .backToTop {
   display: block;
   width: 130px;
@@ -513,4 +506,106 @@ textarea:focus {
 .icon img {
   width: 100px;
   height: 100px;
+}
+@media (max-width: 375px) {
+  nav {
+    gap: 0.5rem;
+    font-weight: 500;
+    padding: 10px 25px;
+    font-size: 0.75rem;
+  }
+
+  .textMe {
+    font-size: 2.5rem;
+  }
+
+  .subTitleMe {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #aboutMe {
+    font-size: 0.75rem;
+  }
+
+  .textAboutMe {
+    width: 100%;
+    font-size: 0.65rem;
+  }
+
+  .iconsGrid {
+    width: 100%;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sectionMySkills {
+    gap: 0;
+  }
+
+  .iconsGrid img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .titleContact,
+  .textMyQualifications {
+    font-size: 3rem;
+  }
+
+  .red,
+  .green,
+  .blue,
+  .purple {
+    display: none;
+  }
+
+  .cardProject {
+    width: 150px;
+    height: 150px;
+  }
+
+  .overlayHidden {
+    display: none;
+  }
+
+  .imgGrid img {
+    width: 55px;
+    height: 100px;
+  }
+
+  .titleQualifications img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .myQualifications {
+    font-size: 0.75rem;
+  }
+
+  #name,
+  #email,
+  #message {
+    width: 150px;
+  }
+
+  #btnSubmit {
+    width: 80px;
+    font-size: 0.75rem;
+  }
+
+  .iconSocial {
+    width: 25px;
+  }
+
+  .backToTop {
+    width: 60px;
+    height: 60px;
+    top: -20%;
+  }
+
+  #footer {
+    font-size: 0.75rem;
+    text-align: center;
+  }
 }
