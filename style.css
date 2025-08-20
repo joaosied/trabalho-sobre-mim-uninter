@@ -1,7 +1,9 @@
+/* declaração de variavel de cor secundaria que sera utilizada bastante */
 :root {
   --color-secondary: #e24646;
 }
 
+/* classe para a nav */
 .active {
   color: var(--color-secondary);
   text-decoration: underline;
@@ -45,7 +47,7 @@ nav a {
 }
 
 #home {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -58,8 +60,9 @@ nav a {
 }
 
 .sectionText {
-  width: auto;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -90,7 +93,7 @@ nav a {
 
 /* Seção Sobre Mim */
 #aboutMe {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -106,7 +109,6 @@ nav a {
 .titleAboutMe,
 .titleMySkills {
   font-weight: 700;
-
   color: var(--color-secondary);
 }
 
@@ -137,18 +139,19 @@ nav a {
 .iconsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  place-items: center;
   gap: 2rem;
 }
 
 .icon {
-  width: 100px;
-  height: 100px;
+  width: 5rem;
+  height: 5rem;
 }
 
 /* Seção de Projetos */
 
 #myProjects {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #9d6730;
   position: relative;
@@ -173,6 +176,16 @@ nav a {
   position: relative;
 }
 
+.divCards {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .imgGrid {
   display: flex;
   align-items: center;
@@ -184,7 +197,7 @@ nav a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50%; /* ocupa metade do card */
+  height: 50%;
   background: rgba(255, 255, 255, 0.795);
   color: #000;
   display: flex;
@@ -192,16 +205,16 @@ nav a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  transform: translateY(100%); /* fica escondido fora do card */
+  transform: translateY(100%);
   transition: all 0.8s ease;
 }
 
-.overlayText{
+.overlayText {
   width: 80%;
 }
 
 .cardProject:hover .overlayHidden {
-  transform: translateY(0); /* desliza pra dentro */
+  transform: translateY(0);
 }
 
 .cardProject:hover .overlayHidden {
@@ -230,13 +243,8 @@ nav a {
   box-shadow: 0 0 20px rgba(161, 0, 175, 0.8);
 }
 
-.cardFirst {
-  transform: translateY(-80px);
-}
-
 .cardLast {
-  transform: translateY(80px);
-  background-image: url('img/sunshine.png');
+  background-image: url("img/sunshine.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -291,7 +299,7 @@ nav a {
 
 /* Seção Formações */
 #divQualifications {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
@@ -327,7 +335,7 @@ nav a {
 
 /* Seção de Contato */
 #contactMe {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   background-color: #efefef;
@@ -452,6 +460,7 @@ textarea:focus {
   position: relative;
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
 }
+
 
 .backToTop {
   display: block;

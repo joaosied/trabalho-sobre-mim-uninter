@@ -1,3 +1,7 @@
+// observa onde que o usuario esta na pagina com o id das section e de acordo com a observação muda 
+// o comportamento da barra de navegação, mudando a estilização do texto com ajuda 
+// da classe .active declarada no css
+
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 

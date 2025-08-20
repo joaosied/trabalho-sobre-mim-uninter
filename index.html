@@ -14,8 +14,10 @@
     />
   </head>
   <body>
+    <!-- ínicio do projeto -->
     <main id="main" class="main">
       <span id="top"></span>
+      <!-- navegação fixa no topo -->
       <nav>
         <a class="nav-link" href="#aboutMe">sobre mim</a>
         <a class="nav-link" href="#myProjects">projetos</a>
@@ -113,7 +115,7 @@
           </div>
         </div>
       </section>
-
+      <!-- seção de meus projetos com tres cards informativos -->
       <section id="myProjects" class="myProjects">
         <div class="circle green"></div>
         <div class="circle purple"></div>
@@ -121,48 +123,54 @@
         <div class="circle blue"></div>
         <div class="circle darkPurple"></div>
 
-        <div class="cardProject cardFirst">
-          <div class="imgGrid">
-            <img src="img/futQuizPhone1.png" alt="imagem do projeto futquiz" />
-            <img src="img/futQuizPhone2.png" alt="imagem do projeto futquiz" />
-          </div>
-          <div class="overlayHidden">
-            <div class="overlayText">
-              <h2>Projetos em Desenvolvimento</h2>
-              <p>Projetos e idéias sendo idealizadas, futquiz e cookeasy</p>
+        <div class="divCards">
+          <div class="cardProject cardFirst">
+            <div class="imgGrid">
+              <img
+                src="img/futQuizPhone1.png"
+                alt="imagem do projeto futquiz"
+              />
+              <img
+                src="img/futQuizPhone2.png"
+                alt="imagem do projeto futquiz"
+              />
             </div>
-          </div>
-        </div>
-
-        <div class="cardProject cardMid">
-          <div class="overlayHidden">
-            <div class="overlayText">
-              <h2>Criação de Protótipos - UX/UI</h2>
-              <p>
-                Idealização, estudos e criação de protótipos utilizando figma e
-                outras ferramentas
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <a
-          href="https://sunshinecleaning-al9qqbaxm-joaosieds-projects.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><div class="cardProject cardLast">
             <div class="overlayHidden">
               <div class="overlayText">
-                <h2>Landing Pages</h2>
+                <h2>Projetos em Desenvolvimento</h2>
+                <p>Projetos e idéias sendo idealizadas, futquiz e cookeasy</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardProject cardMid">
+            <div class="overlayHidden">
+              <div class="overlayText">
+                <h2>Criação de Protótipos - UX/UI</h2>
                 <p>
-                  Criação de Landing Pages para empresas ficticias para fim de estudos!
+                  Idealização, estudos e criação de protótipos utilizando figma
+                  e outras ferramentas
                 </p>
               </div>
             </div>
           </div>
-        </a>
-      </section>
 
+          <a
+            href="https://sunshinecleaning-al9qqbaxm-joaosieds-projects.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="cardProject cardLast">
+              <div class="overlayHidden">
+                <div class="overlayText">
+                  <h2>Landing Pages</h2>
+                  <p>Idealização e Criação de Landing Pages!</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- seção de minhas formações, com  meus certificados -->
       <section id="divQualifications" class="divQualifications">
         <div class="titleQualifications">
           <h2 class="textMyQualifications">
@@ -192,7 +200,7 @@
           </p>
         </div>
       </section>
-
+      <!-- seção para me contatar com link para minhas redes -->
       <section id="contactMe" class="contactMe">
         <form class="inputsContact">
           <input type="text" name="name" id="name" placeholder="Nome" />
@@ -237,6 +245,7 @@
           </div>
         </div>
       </section>
+      <!-- footer com botão para voltar ao topo -->
       <footer id="footer" class="footer">
         <a href="#top" class="backToTop">
           <img
