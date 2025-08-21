@@ -205,6 +205,8 @@ nav a {
 
 .overlayText {
   width: 80%;
+  
+  text-decoration: none;
 }
 
 .cardProject:hover .overlayHidden {
@@ -241,6 +243,20 @@ nav a {
   background-image: url("img/sunshine.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.overlayText a{
+  color: #000;
+}
+
+@media (min-width: 1440px) {
+  .cardFirst{
+    transform: translateY(-80px);
+  }
+
+  .cardLast{
+    transform: translateY(80px);
+  }
 }
 
 /* Circulos coloridos */
